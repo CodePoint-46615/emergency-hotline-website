@@ -57,11 +57,12 @@
     <!-- main section ==> card section -->
     <section class="main-body p-10 flex justify-between gap-[30px]">
         <div class="card-container grid grid-cols-3 border w-full h-full">
-            
+
             <!-- card 1 -->
-            <div class="card-1 border p-8">
+            <div class="card-1 border p-5">
                 <div class="flex items-center justify-between">
-                    <img src="./assets/emergency.png" alt="" class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
+                    <img src="./assets/emergency.png" alt=""
+                        class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
                     <i class="fa-solid fa-heart hover:cursor-pointer"></i>
                 </div>
                 <h1 class="font-bold text-2xl text-[#111111]">জাতীয় জরুরি সেবা</h1>
@@ -69,19 +70,29 @@
                 <h1 class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
                 <span class="px-4 py-[6px] text-[#5C5C5C] bg-[#f2f2f2] rounded-full">সার্বজনীন</span>
                 <div class="flex mt-6 gap-2">
-                    <button class="border border-gray-300 shadow-md px-8 py-2 font-normal text-[16px] text-[#5C5C5C] rounded-[8px] w-1/2 hover:cursor-pointer"><i class="fa-solid fa-copy"></i> Copy</button>
+                    <button
+                        class="border border-gray-300 shadow-md px-8 py-2 font-normal text-[16px] text-[#5C5C5C] rounded-[8px] w-1/2 hover:cursor-pointer"><i
+                            class="fa-solid fa-copy"></i> Copy</button>
 
-                    <button class="border px-8 py-2 font-normal text-[16px] rounded-[8px] w-1/2 bg-[#00A63E] text-white hover:cursor-pointer"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button
+                        class="border px-8 py-2 font-normal text-[16px] rounded-[8px] w-1/2 bg-[#00A63E] text-white hover:cursor-pointer"><i
+                            class="fa-solid fa-phone"></i> Call</button>
                 </div>
 
             </div>
 
         </div>
 
-        <div class="call-history border w-[300px] h-[300px]">
-            <div class="heading">
-                <img src="./assets/" alt="">
+        <div class="call-history border w-[400px] h-[300px] p-5">
+            <div class="flex justify-between">
+                <div class="flex items-center gap-2 heading">
+                    <i class="fa-solid fa-clock"></i>
+                    <h1 class="text-[#111111] font-medium text-xl ">Call History</h1>
+                </div>
+
+                <button class="bg-[#00A63E] text-white px-5 py-1 rounded-full">Clear</button>
             </div>
+
 
         </div>
     </section>

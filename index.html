@@ -23,19 +23,19 @@
         </div>
 
         <div class="right-div flex items-center gap-3">
-            <!-- count copy -->
+            <!-- count favorite -->
             <div class="favorite-count  flex items-center justify-center gap-3 px-3 py-1 rounded-full bg-[#41ff6b1a]">
-                <h1>0</h1>
+                <h1 id="count-favorite" class="font-bold">0</h1>
                 <img src="./assets/heart.png" alt="" class="w-[30px] h-[30px]">
             </div>
 
             <!-- count coin -->
             <div class="coin-count  flex items-center justify-center gap-3 px-3 py-1 rounded-full bg-[#41ff6b1a]">
-                <h1>100</h1>
+                <h1 id="count-coin">100</h1>
                 <img src="./assets/coin.png" alt="" class="w-[30px] h-[30px]">
             </div>
 
-            <!-- copy -->
+            <!-- Count copy -->
             <div
                 class="copy-count  flex items-center justify-center gap-1 px-3 py-1 rounded-full bg-[#00A63E] text-white">
                 <h1>0</h1>
@@ -63,12 +63,45 @@
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt=""
                         class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
-                    <i class="fa-solid fa-heart hover:cursor-pointer"></i>
+                    <i id="img-add-to-favorite-card-1" class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
                 </div>
+
                 <h1 class="font-bold text-2xl text-[#111111]">জাতীয় জরুরি সেবা</h1>
-                <span class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency</span>
-                <h1 class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
+
+                <span id="card-title" class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency Service</span>
+
+                <h1 id="card-1-number" class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
+
                 <span class="px-4 py-[6px] text-[#5C5C5C] bg-[#f2f2f2] rounded-full">সার্বজনীন</span>
+
+                <div class="flex mt-6 gap-2">
+                    <button
+                        class="border border-gray-300 shadow-md px-8 py-2 font-normal text-[16px] text-[#5C5C5C] rounded-[8px] w-1/2 hover:cursor-pointer"><i
+                            class="fa-solid fa-copy"></i> Copy</button>
+
+                    <button id="btn-call-1"
+                        class="border px-8 py-2 font-normal text-[16px] rounded-[8px] w-1/2 bg-[#00A63E] text-white hover:cursor-pointer"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+
+            </div>
+
+            <!-- card 2 -->
+            <div class="card-2 border p-5">
+                <div class="flex items-center justify-between">
+                    <img src="./assets/emergency.png" alt=""
+                        class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
+                    <i id="img-add-to-favorite-card-2" class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
+                </div>
+
+                <h1 class="font-bold text-2xl text-[#111111]">জাতীয় জরুরি সেবা</h1>
+
+                <span class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency</span>
+
+                <h1 class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
+
+                <span class="px-4 py-[6px] text-[#5C5C5C] bg-[#f2f2f2] rounded-full">সার্বজনীন</span>
+
                 <div class="flex mt-6 gap-2">
                     <button
                         class="border border-gray-300 shadow-md px-8 py-2 font-normal text-[16px] text-[#5C5C5C] rounded-[8px] w-1/2 hover:cursor-pointer"><i
@@ -92,14 +125,14 @@
 
                 <button class="bg-[#00A63E] text-white px-5 py-1 rounded-full">Clear</button>
             </div>
-
-
         </div>
     </section>
 
 
 
 
+    <script src="./js/favorite.js"></script>
+    <script src="./js/call.js"></script>
 </body>
 
 </html>

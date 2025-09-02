@@ -10,7 +10,7 @@ document.getElementById('img-add-to-favorite-card-1').addEventListener('click', 
     countFavorite();
 })
 
-// count favorite event listener for card -2
-document.getElementById('img-add-to-favorite-card-2').addEventListener('click', () => {
-    countFavorite();
-})
+// // count favorite event listener for card -2
+// document.getElementById('img-add-to-favorite-card-2').addEventListener('click', () => {
+//     countFavorite();
+// })

@@ -54,12 +54,46 @@
         </div>
     </section>
 
-    <!-- main section ==> card section -->
-    <section class="main-body p-10 flex justify-between gap-[30px]">
-        <div class="card-container grid grid-cols-3 border w-full h-full">
+    <!-- main section -->
+    <section class="main-body p-10 flex flex-col-reverse md:flex-row justify-between gap-[30px] w-full h-full">
+
+        <!-- card section -->
+        <div class="card-container grid grid-col-1 md:grid-cols-3 w-full gap-[30px]">
 
             <!-- card 1 -->
-            <div class="card-1 border p-5">
+            <div class="card-1 shadow-lg rounded-2xl p-5">
+
+                <div class="flex items-center justify-between">
+                    <img src="./assets/emergency.png" alt=""
+                        class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
+                    <i id="img-add-to-favorite-card-1"
+                        class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
+                </div>
+
+                <h1 class="font-bold text-2xl text-[#111111]">জাতীয় জরুরি সেবা</h1>
+
+                <span id="card-1-title" class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency
+                    Service</span>
+
+                <h1 id="card-1-number" class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
+
+                <span class="px-4 py-[6px] text-[#5C5C5C] bg-[#f2f2f2] rounded-full">সার্বজনীন</span>
+
+                <div class="flex mt-6 gap-2">
+                    <button id="btn-copy-1"
+                        class="border border-gray-300 shadow-md px-8 py-2 font-normal text-[16px] text-[#5C5C5C] rounded-[8px] w-1/2 hover:cursor-pointer"><i
+                            class="fa-solid fa-copy"></i> Copy</button>
+
+                    <button id="btn-call-1"
+                        class="border px-8 py-2 font-normal text-[16px] rounded-[8px] w-1/2 bg-[#00A63E] text-white hover:cursor-pointer"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+
+            </div>
+
+            <!-- card 2 -->
+            <div class="card-1 shadow-lg rounded-2xl p-5">
+
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt=""
                         class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
@@ -88,20 +122,22 @@
 
             </div>
 
-            <!-- card 2 -->
-            <div class="card-2 border p-5">
+            <!-- card 3 -->
+            <div class="card-1 shadow-lg rounded-2xl p-5">
+
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt=""
                         class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
-                    <i id="img-add-to-favorite-card-2"
+                    <i id="img-add-to-favorite-card-1"
                         class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
                 </div>
 
                 <h1 class="font-bold text-2xl text-[#111111]">জাতীয় জরুরি সেবা</h1>
 
-                <span class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency</span>
+                <span id="card-1-title" class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency
+                    Service</span>
 
-                <h1 class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
+                <h1 id="card-1-number" class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
 
                 <span class="px-4 py-[6px] text-[#5C5C5C] bg-[#f2f2f2] rounded-full">সার্বজনীন</span>
 
@@ -110,17 +146,205 @@
                         class="border border-gray-300 shadow-md px-8 py-2 font-normal text-[16px] text-[#5C5C5C] rounded-[8px] w-1/2 hover:cursor-pointer"><i
                             class="fa-solid fa-copy"></i> Copy</button>
 
-                    <button
+                    <button id="btn-call-1"
                         class="border px-8 py-2 font-normal text-[16px] rounded-[8px] w-1/2 bg-[#00A63E] text-white hover:cursor-pointer"><i
                             class="fa-solid fa-phone"></i> Call</button>
                 </div>
 
             </div>
 
+            <!-- card 4 -->
+            <div class="card-1 shadow-lg rounded-2xl p-5">
+
+                <div class="flex items-center justify-between">
+                    <img src="./assets/emergency.png" alt=""
+                        class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
+                    <i id="img-add-to-favorite-card-1"
+                        class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
+                </div>
+
+                <h1 class="font-bold text-2xl text-[#111111]">জাতীয় জরুরি সেবা</h1>
+
+                <span id="card-1-title" class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency
+                    Service</span>
+
+                <h1 id="card-1-number" class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
+
+                <span class="px-4 py-[6px] text-[#5C5C5C] bg-[#f2f2f2] rounded-full">সার্বজনীন</span>
+
+                <div class="flex mt-6 gap-2">
+                    <button
+                        class="border border-gray-300 shadow-md px-8 py-2 font-normal text-[16px] text-[#5C5C5C] rounded-[8px] w-1/2 hover:cursor-pointer"><i
+                            class="fa-solid fa-copy"></i> Copy</button>
+
+                    <button id="btn-call-1"
+                        class="border px-8 py-2 font-normal text-[16px] rounded-[8px] w-1/2 bg-[#00A63E] text-white hover:cursor-pointer"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+
+            </div>
+
+            <!-- card 5 -->
+            <div class="card-1 shadow-lg rounded-2xl p-5">
+
+                <div class="flex items-center justify-between">
+                    <img src="./assets/emergency.png" alt=""
+                        class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
+                    <i id="img-add-to-favorite-card-1"
+                        class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
+                </div>
+
+                <h1 class="font-bold text-2xl text-[#111111]">জাতীয় জরুরি সেবা</h1>
+
+                <span id="card-1-title" class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency
+                    Service</span>
+
+                <h1 id="card-1-number" class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
+
+                <span class="px-4 py-[6px] text-[#5C5C5C] bg-[#f2f2f2] rounded-full">সার্বজনীন</span>
+
+                <div class="flex mt-6 gap-2">
+                    <button
+                        class="border border-gray-300 shadow-md px-8 py-2 font-normal text-[16px] text-[#5C5C5C] rounded-[8px] w-1/2 hover:cursor-pointer"><i
+                            class="fa-solid fa-copy"></i> Copy</button>
+
+                    <button id="btn-call-1"
+                        class="border px-8 py-2 font-normal text-[16px] rounded-[8px] w-1/2 bg-[#00A63E] text-white hover:cursor-pointer"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+
+            </div>
+
+            <!-- card 6 -->
+            <div class="card-1 shadow-lg rounded-2xl p-5">
+
+                <div class="flex items-center justify-between">
+                    <img src="./assets/emergency.png" alt=""
+                        class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
+                    <i id="img-add-to-favorite-card-1"
+                        class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
+                </div>
+
+                <h1 class="font-bold text-2xl text-[#111111]">জাতীয় জরুরি সেবা</h1>
+
+                <span id="card-1-title" class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency
+                    Service</span>
+
+                <h1 id="card-1-number" class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
+
+                <span class="px-4 py-[6px] text-[#5C5C5C] bg-[#f2f2f2] rounded-full">সার্বজনীন</span>
+
+                <div class="flex mt-6 gap-2">
+                    <button
+                        class="border border-gray-300 shadow-md px-8 py-2 font-normal text-[16px] text-[#5C5C5C] rounded-[8px] w-1/2 hover:cursor-pointer"><i
+                            class="fa-solid fa-copy"></i> Copy</button>
+
+                    <button id="btn-call-1"
+                        class="border px-8 py-2 font-normal text-[16px] rounded-[8px] w-1/2 bg-[#00A63E] text-white hover:cursor-pointer"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+
+            </div>
+
+            <!-- card 7 -->
+            <div class="card-1 shadow-lg rounded-2xl p-5">
+
+                <div class="flex items-center justify-between">
+                    <img src="./assets/emergency.png" alt=""
+                        class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
+                    <i id="img-add-to-favorite-card-1"
+                        class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
+                </div>
+
+                <h1 class="font-bold text-2xl text-[#111111]">জাতীয় জরুরি সেবা</h1>
+
+                <span id="card-1-title" class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency
+                    Service</span>
+
+                <h1 id="card-1-number" class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
+
+                <span class="px-4 py-[6px] text-[#5C5C5C] bg-[#f2f2f2] rounded-full">সার্বজনীন</span>
+
+                <div class="flex mt-6 gap-2">
+                    <button
+                        class="border border-gray-300 shadow-md px-8 py-2 font-normal text-[16px] text-[#5C5C5C] rounded-[8px] w-1/2 hover:cursor-pointer"><i
+                            class="fa-solid fa-copy"></i> Copy</button>
+
+                    <button id="btn-call-1"
+                        class="border px-8 py-2 font-normal text-[16px] rounded-[8px] w-1/2 bg-[#00A63E] text-white hover:cursor-pointer"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+
+            </div>
+
+            <!-- card 8 -->
+            <div class="card-1 shadow-lg rounded-2xl p-5">
+
+                <div class="flex items-center justify-between">
+                    <img src="./assets/emergency.png" alt=""
+                        class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
+                    <i id="img-add-to-favorite-card-1"
+                        class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
+                </div>
+
+                <h1 class="font-bold text-2xl text-[#111111]">জাতীয় জরুরি সেবা</h1>
+
+                <span id="card-1-title" class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency
+                    Service</span>
+
+                <h1 id="card-1-number" class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
+
+                <span class="px-4 py-[6px] text-[#5C5C5C] bg-[#f2f2f2] rounded-full">সার্বজনীন</span>
+
+                <div class="flex mt-6 gap-2">
+                    <button
+                        class="border border-gray-300 shadow-md px-8 py-2 font-normal text-[16px] text-[#5C5C5C] rounded-[8px] w-1/2 hover:cursor-pointer"><i
+                            class="fa-solid fa-copy"></i> Copy</button>
+
+                    <button id="btn-call-1"
+                        class="border px-8 py-2 font-normal text-[16px] rounded-[8px] w-1/2 bg-[#00A63E] text-white hover:cursor-pointer"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+
+            </div>
+
+            <!-- card 9 -->
+            <div class="card-1 shadow-lg rounded-2xl p-5">
+
+                <div class="flex items-center justify-between">
+                    <img src="./assets/emergency.png" alt=""
+                        class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
+                    <i id="img-add-to-favorite-card-1"
+                        class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
+                </div>
+
+                <h1 class="font-bold text-2xl text-[#111111]">জাতীয় জরুরি সেবা</h1>
+
+                <span id="card-1-title" class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency
+                    Service</span>
+
+                <h1 id="card-1-number" class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
+
+                <span class="px-4 py-[6px] text-[#5C5C5C] bg-[#f2f2f2] rounded-full">সার্বজনীন</span>
+
+                <div class="flex mt-6 gap-2">
+                    <button
+                        class="border border-gray-300 shadow-md px-8 py-2 font-normal text-[16px] text-[#5C5C5C] rounded-[8px] w-1/2 hover:cursor-pointer"><i
+                            class="fa-solid fa-copy"></i> Copy</button>
+
+                    <button id="btn-call-1"
+                        class="border px-8 py-2 font-normal text-[16px] rounded-[8px] w-1/2 bg-[#00A63E] text-white hover:cursor-pointer"><i
+                            class="fa-solid fa-phone"></i> Call</button>
+                </div>
+
+            </div>
+
+            
+
         </div>
 
         <!-- call history section starts here -->
-        <div class="call-history border w-[400px] h-[300px] p-5">
+        <div class="call-history shadow-lg w-full md:w-[400px] rounded-xl p-5">
             <!-- call history heading section -->
             <div class="flex justify-between">
                 <div class="flex items-center gap-2 heading">
@@ -128,18 +352,12 @@
                     <h1 class="text-[#111111] font-medium text-xl ">Call History</h1>
                 </div>
 
-                <button class="bg-[#00A63E] text-white px-5 py-1 rounded-full">Clear</button>
+                <button id="btn-clear-history" class="bg-[#00A63E] text-white px-5 py-1 rounded-full hover:cursor-pointer">Clear</button>
             </div>
 
             <!-- call-log-card-section -->
             <div id="call-log-container">
-                <div class="flex mt-4 mb-2 justify-between items-center shadow p-2 bg-[#FAFAFA] hidden">
-                    <div>
-                        <h1 id="call-history-title" class="">Jatiya Joruri Sheba</h1>
-                        <h1 id="call-history-number" class="text-[#5C5C5C]">999</h1>
-                    </div>
-                    <p id="call-history-time">11:36:58 AM</p>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -149,6 +367,7 @@
 
     <script src="./js/favorite.js"></script>
     <script src="./js/call.js"></script>
+    <script src="./js/copy.js"></script>
 </body>
 
 </html>

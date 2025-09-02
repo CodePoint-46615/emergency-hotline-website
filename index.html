@@ -63,12 +63,14 @@
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt=""
                         class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
-                    <i id="img-add-to-favorite-card-1" class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
+                    <i id="img-add-to-favorite-card-1"
+                        class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
                 </div>
 
                 <h1 class="font-bold text-2xl text-[#111111]">জাতীয় জরুরি সেবা</h1>
 
-                <span id="card-title" class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency Service</span>
+                <span id="card-1-title" class="font-normal text-[18px] text-[#5C5C5C] mb-6">National Emergency
+                    Service</span>
 
                 <h1 id="card-1-number" class="font-bold text-[32px] tetx-[#111111] mb-[2px]">999</h1>
 
@@ -91,7 +93,8 @@
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt=""
                         class="w-[64px] h-[64px] p-[14px] bg-[#FFE3E2] rounded-2xl mb-4">
-                    <i id="img-add-to-favorite-card-2" class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
+                    <i id="img-add-to-favorite-card-2"
+                        class="fa-solid fa-heart hover:cursor-pointer hover:bg-slate-300"></i>
                 </div>
 
                 <h1 class="font-bold text-2xl text-[#111111]">জাতীয় জরুরি সেবা</h1>
@@ -116,7 +119,9 @@
 
         </div>
 
+        <!-- call history section starts here -->
         <div class="call-history border w-[400px] h-[300px] p-5">
+            <!-- call history heading section -->
             <div class="flex justify-between">
                 <div class="flex items-center gap-2 heading">
                     <i class="fa-solid fa-clock"></i>
@@ -124,6 +129,17 @@
                 </div>
 
                 <button class="bg-[#00A63E] text-white px-5 py-1 rounded-full">Clear</button>
+            </div>
+
+            <!-- call-log-card-section -->
+            <div id="call-log-container">
+                <div class="flex mt-4 mb-2 justify-between items-center shadow p-2 bg-[#FAFAFA] hidden">
+                    <div>
+                        <h1 id="call-history-title" class="">Jatiya Joruri Sheba</h1>
+                        <h1 id="call-history-number" class="text-[#5C5C5C]">999</h1>
+                    </div>
+                    <p id="call-history-time">11:36:58 AM</p>
+                </div>
             </div>
         </div>
     </section>
